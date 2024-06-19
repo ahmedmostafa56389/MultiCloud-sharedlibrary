@@ -1,6 +1,6 @@
 #!usr/bin/env groovy
-def call(String imageName) {
+def call(String IMAGE_NAME) {
       echo "build"
-    sh "docker build -t ${imageName} ."
+    sh "docker build -t ${IMAGE_NAME} ."
     }
     
