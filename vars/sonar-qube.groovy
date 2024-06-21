@@ -3,7 +3,7 @@
 def call() {
     echo "Running SonarQube Analysis..."
 
-    def sonarqubeCredentialsId = 'sonar-server'
+    def sonarqubeCredentialsId = 'sonar-scanner'
 
     def projectName = 'ahmed'
     def projectKey = 'ahmed'
