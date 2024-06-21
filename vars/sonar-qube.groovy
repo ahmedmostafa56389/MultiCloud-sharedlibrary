@@ -5,9 +5,9 @@ def call() {
   withSonarQubeEnv(credentialsId: 'sonar') {
         echo "Running SonarQube Analysis..."
         sh ''' 
-        $SCANNER_HOME/bin/sonar-scanner -Dsonar.projectName=MULTICLOUD \
+        $SCANNER_HOME/bin/sonar-scanner -Dsonar.projectName=ahmed \
         -Dsonar.java.binaries=. \
-        -Dsonar.projectKey=MULTICLOUD 
+        -Dsonar.projectKey=ahmed 
         '''
   }
 }
