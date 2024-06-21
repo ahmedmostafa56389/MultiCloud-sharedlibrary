@@ -5,5 +5,5 @@ def call(String imageName, String dockerHubCredentialsID) {
         sh "docker login -u ${USERNAME} -p ${PASSWORD}"
     }
     echo "push to docker hub"
-    sh "docker push ${IMAGE_NAME}:${env.BUILD_NUMBER}
+    sh "docker push ${IMAGE_NAME}:${BUILD_NUMBER}"
 }
